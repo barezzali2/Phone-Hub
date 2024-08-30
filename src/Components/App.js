@@ -7,8 +7,6 @@ import ItemList from "./ItemList";
 import CardList from "./CardList";
 import ItemDetails from "./ItemDetails";
 
-
-
 const added = [
 
   {
