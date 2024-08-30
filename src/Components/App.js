@@ -7,27 +7,7 @@ import ItemList from "./ItemList";
 import CardList from "./CardList";
 import ItemDetails from "./ItemDetails";
 
-const added = [
 
-  {
-    id: 0,
-    name: "Iphone 15 Promax",
-    image: "https://static.skyassets.com/contentstack/assets/blt143e20b03d72047e/blt24173242c100c773/6501b50dbb60f72800481566/Sky_Mobile_PDP1_iPhone15Pro_Natural_Titanium-PreOrder.png",
-    year: 2023,
-    
-    desc: "This is Iphone 15 Promax"
-  },
-  {
-    id: 1,
-    name: "Google Pixel 8 Pro",
-    image: "https://www.ourfriday.co.uk/image/cache/catalog/Google/google-pixel-8-pro-obsidian-1-1-800x800.png",
-    year: 2023,
-    
-    desc: "This is Google Pixel 8 Pro"
-    
-  }
-  
-]
 
 const phones = [
   {
