@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  color: var(--color-text);
+  background-color: var(--color-background-900);
+  padding: 1.0rem;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    height: 7.2rem;
+    padding: 0 3.2rem;
+    background-color: var(--color-primary);
+    border-radius: 0.9rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.logo span {
+  font-size: 3.5rem;
+}
+
+.logo h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #000;
+}
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo h2 {
+ 
+  border: none;
+  color: var(--color-text);
+  background-color: var(--color-primary-light);
+  position: absolute;
+  top: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 20px;
+}
+
+.main {
+  margin-top: 2.4rem;
+  height: calc(100vh - 7.2rem - 3 * 2.4rem);
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+}
+
+.box {
+  width: 45rem;
+  max-width: 45rem;
+  border-radius: 0.9rem;
+  overflow: scroll;
+  position: relative;
+  background-color: #dad9e6;
+}
+
+.itemList ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 1.4rem;
+}
+
+.items li{
+  display: grid;
+  grid-template-columns: 1fr 2fr auto;
+  align-items: center;
+  padding: 1.2rem;
+  border-radius: 7px;
+  transition: 0.5s;
+}
+
+
+.items li img {
+  border-radius: 20%;
+  width: 100%;
+  grid-row: span 2;
+}
+
+.items li h3 {
+  grid-row: 1;
+  grid-column: 2;
+  font-size: 20px;
+}
+
+.items li p {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.items li:hover {
+  background-color: #94989c;
+}
+
+.items .button {
+  position: absolute;
+  margin-left: 78%;
+  background-color: #b2b9c1;
+  color: #343a40;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+
+  grid-column: 3; /* Button will be in the third column */
+  justify-self: center; /* Center the button in the third column */
+  /* margin-top: 50%; */
+}
+
+.items .button:hover {
+  background-color: #484a4d;
+  color: #b2b9c1;
+}
+
+
+.itemDetails {
+  display: flexbox;
+  justify-content: center; /* Centers content horizontally */
+  align-items: flex-start; /* Aligns content near the top */
+  flex-direction: column; /* Stacks content vertically */
+  text-align: center; /* Centers text and other content */
+}
+
+.itemDetails img {
+  border-radius: 20%;
+  width: 69%;
+}
+
+.itemDetails h1 {
+  font-size: 23.5px;
+}
+
+.itemDetails p {
+  margin: 30px;
+  font-size: 15px;
+  font-weight: 501;
+}
+
+.itemDetails .button {
+  background-color: rgb(65, 65, 184);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: none;
+}
+
+.itemDetails .button:hover {
+  cursor: pointer;
+  background-color: rgb(34, 34, 155);
+}
+
+
+.cardList ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 1.4rem;
+}
+
+.itemsAdded li{
+  display: grid;
+  grid-template-columns: 1fr 2fr auto;
+  align-items: center;
+  padding: 1.2rem;
+  border-radius: 7px;
+  transition: 0.5s;
+}
+
+.itemsAdded li img {
+  border-radius: 20%;
+  width: 100%;
+  grid-row: span 2;
+}
+
+.itemsAdded li h3 {
+  grid-row: 1;
+  grid-column: 2;
+  font-size: 20px;
+}
+
+.itemsAdded li p {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.itemsAdded li .desc {
+  margin-bottom: 50px;
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.itemsAdded li .year {
+  margin-top: 36px;
+}
+
+.itemsAdded .button {
+  position: absolute;
+  margin-left: 80%;
+  background-color: #b8b7c4;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+
+  grid-column: 3; /* Button will be in the third column */
+  justify-self: center; /* Center the button in the third column */
+}
+
+.itemsAdded .button:hover {
+  background-color: #484a4d;
+  color: #b2b9c1;
+}
+
+.itemDetails .btn-back {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  padding: 6px;
+  cursor: pointer;
+  background-color: #b2b9c1;
+  border: none;
+  border-radius: 3px;
+ 
+}
+
+.itemDetails .btn-back:hover {
+  background-color: #484a4d;
+  color: #b2b9c1;
+}
+
+
+.cardList .card-header {
+  text-align: center;
+  padding-top: 15px;
+  font-weight: bold;
+}
